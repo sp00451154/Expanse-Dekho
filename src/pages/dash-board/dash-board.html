@@ -1,0 +1,62 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title>Expanse Dekho</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-item>
+      <ion-icon name='calendar' item-start style="color: #55acee"></ion-icon>
+      Month
+      <ion-badge item-end style="background-color: #55acee">January</ion-badge>
+    </ion-item>
+
+    <ion-item>
+      <ion-icon name='pricetags' item-start style="color: #d03e84"></ion-icon>
+      Salary
+      <ion-badge item-end style="background-color: #d03e84">20K</ion-badge>
+    </ion-item>
+
+    <ion-item>
+      <ion-icon name='pricetag' item-start style="color: #3ec9d0"></ion-icon>
+      Savings
+      <ion-badge item-end style="background-color: #3ec9d0">5k</ion-badge>
+    </ion-item>
+
+    <ion-item>
+      <ion-icon name='pricetags' item-start style="color: #dd1f1f"></ion-icon>
+      Need
+      <ion-badge item-end style="background-color: #dd1f1f">2k</ion-badge>
+    </ion-item>
+  </ion-card>
+
+  <ion-card>
+    <p>
+      <button ion-button icon-start color="primary" full>Set Month</button>
+    </p>
+    <p>
+      <button ion-button icon-end color="primary" full>Set Expanse</button>
+    </p>
+    <p>
+      <button ion-button color="primary" full>Set Admin Password</button>
+    </p>
+    <p>
+      <button ion-button color="primary" full>Set User Password</button>
+    </p>
+  </ion-card>
+
+  <ion-footer>
+    <ion-toolbar>
+      <button ion-button color="primary" icon-start (click)="navigateToActualShoppingPage()">
+        <ion-icon></ion-icon>
+        Actual Exp.
+      </button>
+      <button ion-button color="primary" outline icon-start (click)="navigateToExpectedShoppingPage()">
+        <ion-icon is-active="false"></ion-icon>
+        Expected Exp.
+      </button>
+    </ion-toolbar>
+  </ion-footer>
+
+</ion-content>
